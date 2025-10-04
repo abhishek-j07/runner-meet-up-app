@@ -9,5 +9,11 @@ public interface ClubService {
 
     List<ClubDTO> findAllClubs();
 
-    Club saveClub(Club club);
+    Club saveClub(ClubDTO club);
+
+    ClubDTO findClubById(Long clubId);
+
+    void updateClub(ClubDTO club);
+
+    void deleteClub(Long clubId);
 }
